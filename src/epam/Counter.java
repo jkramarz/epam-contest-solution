@@ -68,7 +68,7 @@ public class Counter {
 			results[i].start();
 		}
 		latch.await();
-		return sumArray(results);
+		return node.neigh.size() + sumArray(results);
 	}
 	
 	private int sumArray(VisitorThread[] a){
